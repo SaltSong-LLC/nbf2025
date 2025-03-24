@@ -1,0 +1,121 @@
+body {
+    font-family: 'Helvetica', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+header {
+    background-color: #fff;
+    padding: 20px;
+    margin: 0 auto;
+    width: auto;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+#hero {
+    background-color: rgb(4, 33, 73);
+    color: #fff;
+}
+
+#support-succeed-shine {
+    background-color: rgb(83, 108, 139);
+    color: #fff;
+}
+
+.content {
+    padding: 40px 0;
+    background-color: #fff;
+    margin: 0;
+}
+
+.content * {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.image-left {
+    float: left;
+    margin-right: 20px;
+}
+
+.text-right {
+    float: right;
+}
+
+.wide-image {
+    width: 100%;
+    height: auto;
+}
+
+.side-by-side {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.triple-card {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-content img {
+    width: 100px;
+    height: auto;
+}
+
+.footer-content p {
+    margin: 0;
+}
+
+.footer-content .phone {
+    color: #000;
+    text-decoration: none;
+}
+
+.footer-content .small {
+    font-size: 12px;
+}
+
+.footer-content .bold {
+    font-weight: bold;
+}
+
+.footer-content .email {
+    color: #000;
+    text-decoration: none;
+}
+
+.footer-content .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000; 
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}   
+
+.footer-content .button:hover {
+    background-color: #333;
+}   
+
+.footer-content .button:active {
+    background-color: #000;
+}       
+
