@@ -4,6 +4,8 @@ body {
     padding: 0;
     background-color: #fff;
     text-align: center;
+    font-size: 15pt;
+
 }
 
 header {
@@ -11,6 +13,15 @@ header {
     padding: 20px;
     margin: 0 auto;
     width: auto;
+}
+
+.logo img {
+    width: 36vw;
+    height: auto;
+}
+
+.logo {
+    margin: 20px 0;
 }
 
 .container {
@@ -22,9 +33,27 @@ header {
     color: #fff;
 }
 
+#hero .right video {
+    height: 385px;
+    width: 36.3vw;
+    display: block;
+    margin: 0 auto;
+}
+
+#hero .right {
+    background-color: rgb(0, 0, 10);
+}
+
 #support-succeed-shine {
     background-color: rgb(83, 108, 139);
     color: #fff;
+}
+
+#hero-image img {
+    width: 100%;
+    height: 45vh;
+    object-fit: cover;
+    display: block;
 }
 
 .content {
@@ -33,19 +62,47 @@ header {
     margin: 0;
 }
 
-.content * {
-    max-width: 1200px;
+.content > div {
+    max-width: 1400px;
+    width: 100%;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0;
 }
 
-.image-left {
-    float: left;
-    margin-right: 20px;
+.content > div.ultrawide {
+    max-width: none;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 0;
+}
+
+.image-left img {
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
 .text-right {
-    float: right;
+    background-color: rgb(12, 85, 138);
+    color: #fff;
+    padding: 20px 6vw;
+}
+
+.button {
+    background-color: rgb(12, 85, 138);
+    color: #fff;
+    padding: 25px 70px;
+    border-radius: 0;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: block;
+    width: fit-content;
+    margin: 30px 0;
 }
 
 .wide-image {
@@ -57,65 +114,103 @@ header {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
+    padding: 0;
+    margin: 0;
+
+}
+
+.side-by-side .left {
+    text-align: left;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: 600;
 }
 
 .triple-card {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+    background-color: rgb(0,0,0);
 }
 
-.card {
-    flex: 1;
+.triple-card .card {
+    background-color: rgb(255,255,255);
+    padding: 40px 20px;
+}
+
+.triple-card .card .head {
+    font-size: 3.4rem;
+    font-weight: 600;
+    padding-bottom: 5px;
+    display: block;
+}
+
+.triple-card .card .body {
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.three-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 60px;
+}
+
+.three-card .card {
+    background-color: rgb(222, 225, 230);
+    padding: 20px 20px;
     margin: 0 10px;
-}
-
-.footer-content {
+    height: 100%;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
 }
 
-.footer-content img {
-    width: 100px;
-    height: auto;
+.three-card .card h3 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin: 10px 0;
 }
 
-.footer-content p {
-    margin: 0;
+.three-card .card p {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 10px 0;
 }
 
-.footer-content .phone {
-    color: #000;
+.three-card .card .button {
+    background-color: rgb(12, 85, 138);
+    color: #fff;
+    padding: 25px 70px;
+    border-radius: 0;
     text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: auto auto 20px auto;
+    position: sticky;
+    bottom: 0;
 }
 
-.footer-content .small {
-    font-size: 12px;
+
+footer {
+    margin-top: 40px;
+    background-color: rgb(4, 33, 73);
+    color: #fff;
+    padding: 20px 0;
 }
 
-.footer-content .bold {
-    font-weight: bold;
-}
-
-.footer-content .email {
-    color: #000;
-    text-decoration: none;
-}
-
-.footer-content .button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #000; 
+footer a.phone {
     color: #fff;
     text-decoration: none;
-    border-radius: 5px;
-}   
+}
 
-.footer-content .button:hover {
-    background-color: #333;
-}   
+footer a.phone:hover {
+    text-decoration: underline;
+}
 
-.footer-content .button:active {
-    background-color: #000;
-}       
-
+.small {
+    font-size: 0.8rem;
+    font-weight: 400;
+}
