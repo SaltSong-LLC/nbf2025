@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Helvetica', sans-serif;
     margin: 0;
@@ -15,8 +19,13 @@ header {
     width: auto;
 }
 
+main {
+    width: 100%;
+}
+
 .logo img {
-    width: 36vw;
+    width: 20em;
+    max-width: 80%;
     height: auto;
 }
 
@@ -26,6 +35,7 @@ header {
 
 .container {
     margin: 0 auto;
+    width: 100%;
 }
 
 #hero {
@@ -210,7 +220,45 @@ footer a.phone:hover {
     text-decoration: underline;
 }
 
+footer img {
+    max-width: 80%;
+}
+
 .small {
     font-size: 0.8rem;
     font-weight: 400;
 }
+
+@media (max-width: 1080px) {
+    .triple-card .card .head {
+        font-size: 2.5rem;
+    }
+
+    .triple-card .card .body {
+        font-size: 1.5rem;
+    }
+
+    .three-card {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .side-by-side {
+        grid-template-columns: 1fr;
+    }
+
+    .triple-card {
+        grid-template-columns: 1fr;
+    }
+
+    .three-card {
+        grid-template-columns: 1fr;
+    }
+
+    .content > div.ultrawide {
+        grid-template-columns: 1fr;
+    }
+}
+
+
