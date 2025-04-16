@@ -80,6 +80,7 @@ main {
 }
 
 .content > div.ultrawide {
+    background-color: rgb(12, 85, 138);
     max-width: none;
     width: 100%;
     margin: 0 auto;
@@ -89,6 +90,12 @@ main {
     gap: 0;
 }
 
+.image-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .image-left img {
     display: block;
     width: 100%;
@@ -96,7 +103,7 @@ main {
 }
 
 .text-right {
-    background-color: rgb(12, 85, 138);
+    
     color: #fff;
     padding: 20px 6vw;
 }
