@@ -275,6 +275,19 @@ footer img {
         grid-template-columns: 1fr;
     }
 
+    .side-by-side .left h2, .side-by-side .left p, .side-by-side .left {
+        text-align: center;
+    }
+
+    .side-by-side .left {
+        padding-bottom: 40px;
+    }
+
+    .side-by-side .left .button {
+        margin: 0 auto;
+        width: auto;
+    }
+
     .triple-card {
         grid-template-columns: 1fr;
     }
